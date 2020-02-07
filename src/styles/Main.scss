@@ -1,0 +1,9 @@
+@import "./variables/variables";
+@import "./mixins/mixins";
+@import "./sassComponents/header";
+@import "./sassComponents/footer";
+
+.container {
+  margin: 0 5rem;
+  display: flex;
+}

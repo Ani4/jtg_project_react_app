@@ -1,0 +1,18 @@
+@mixin center-content {
+    margin: auto;
+    padding: .5rem;
+
+
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    width: 100%;
+
+    .nav-item {
+        text-transform: uppercase;
+        margin: auto;
+        margin-left: auto;
+    }
+}
