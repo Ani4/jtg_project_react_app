@@ -1,9 +1,39 @@
+/*General Styles*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: normal 16px sans-serif;
+  color: #555;
+}
+
+ul,
+nav {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  opacity: 0.75;
+  color: black;
+}
+
+a:hover {
+  opacity: 1;
+
+}
+
+.container {
+  margin: 0 10vw;
+
+}
+
+
 @import "./variables/variables";
 @import "./mixins/mixins";
 @import "./sassComponents/header";
 @import "./sassComponents/footer";
-
-.container {
-  margin: 0 5rem;
-  display: flex;
-}

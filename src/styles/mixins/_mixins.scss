@@ -1,18 +1,11 @@
-@mixin center-content {
-    margin: auto;
-    padding: .5rem;
+@mixin center-flex($dir: row, $gap: space-between) {
+  display: flex;
+  justify-content: space-around;
 
-
+  align-items: center;
+  flex-direction: $dir;
 }
 
-.nav-list {
-    display: flex;
-    list-style: none;
-    width: 100%;
-
-    .nav-item {
-        text-transform: uppercase;
-        margin: auto;
-        margin-left: auto;
-    }
+@mixin border-showdow {
+  box-shadow: 0px 8px 1px rgba(0, 0, 0, 0.1);
 }
