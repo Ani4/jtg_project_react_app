@@ -10,26 +10,19 @@
     .wrapper {
         padding: 1rem 2rem;
 
-        .heading {
-            font-size: 130%;
-
-            color: $primary;
-            padding-bottom: 0.5rem;
-            border-bottom: 0.1rem solid $primary;
-        }
-
+        //-------------INNER BLOCK---------------------------------------------------
         &-inner {
             display: flex;
             justify-content: space-between;
             padding: 1rem 0 1rem 0;
 
 
-
+            //-------------INNER LEFT BLOCK---------------------------------------------------
             &-left {
 
                 display: flex;
                 flex-direction: column;
-                max-width: 450px;
+                max-width: 550px;
                 font-size: 1rem;
                 justify-content: space-between;
 
@@ -43,6 +36,7 @@
 
             }
 
+            //-------------INNER RIGHTBLOCK---------------------------------------------------
             &-right {
                 display: flex;
                 padding-left: 1rem;
@@ -64,7 +58,7 @@
 
                         &-inner {
                             &:nth-child(2) {
-                                border-left: 1px solid lighten(grey, 30%);
+                                border-left: $border-light-gray;
                             }
 
                             &-title {
@@ -82,6 +76,7 @@
         }
     }
 
+    //-------------@media querys---------------------------------------------------
     @media screen and (max-width: $medium) {
         .wrapper-inner {
             flex-direction: column;
@@ -109,7 +104,7 @@
 
                 }
 
-                @media screen and (max-width:600px) {
+                @media screen and (max-width:$sm-to-md) {
                     flex-direction: column;
 
                     &-block {
