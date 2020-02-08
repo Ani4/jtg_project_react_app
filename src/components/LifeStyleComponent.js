@@ -60,7 +60,9 @@ export default function LifeStyle(props) {
         <div className="wrapper-inner">
           <div className="wrapper-inner-left">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremaue laudantium,totam rem aperiam, eaque ipse. ro
+            accusantium doloremaue laudantium,totam rem aperiam, eaque ipse.
+            <br />
+            <br />
             Numquameius modi tempora incidunt ut labore et. dolore magnam
             aliquam quaerat voluptatem. Ut enim ad mina veniam, aus nosexercato
             TS nemullam corporis suscipit laboriosam, nisi ut aliquid ex ea
