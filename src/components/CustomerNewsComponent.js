@@ -1,6 +1,6 @@
 import React from "react";
 function DisplayCard(props) {
-  return props.imgs.map(e => <img src={`/assets/images/${e}`} />);
+  return props.imgs.map(e => <img src={`/assets/images/${e}`} alt="" />);
 }
 
 function Customer() {
