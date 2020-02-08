@@ -23,18 +23,14 @@
     }
 
     button {
-
-
         width: 20%;
         height: 10%;
-
         z-index: 100;
         top: 80%;
         right: 10%;
         position: absolute;
         background-color: white;
         outline: none;
-
         cursor: pointer;
         font-weight: 700;
         word-spacing: .1rem;
@@ -43,6 +39,10 @@
         img {
             width: 1vw;
             height: 1vw;
+        }
+
+        @media screen and (max-width:$sm-to-md) {
+            font-size: 35%;
         }
 
     }

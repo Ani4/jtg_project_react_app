@@ -55,6 +55,20 @@
       justify-content: space-around;
 
     }
+
+
+  }
+
+  .wrapper {
+    padding: 2rem 3rem;
+  }
+
+  .container-container {
+    margin: 0;
+    border: $outline-border;
+    width: 100%;
+    margin-bottom: 2rem;
+    @include bg-grad;
   }
 
   @import "./slider";

@@ -1,80 +1,74 @@
 .lifestyle {
-    display: inline-block;
 
-    margin: 0;
-    border: $outline-border;
-    width: 100%;
-    // padding-bottom: 1rem;
-    @include bg-grad;
 
-    .wrapper {
-        padding: 1rem 2rem;
+    // .wrapper {
 
-        //-------------INNER BLOCK---------------------------------------------------
-        &-inner {
+
+    //-------------INNER BLOCK---------------------------------------------------
+    .wrapper-inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0 1rem 0;
+
+
+        //-------------INNER LEFT BLOCK---------------------------------------------------
+        &-left {
+
             display: flex;
+            flex-direction: column;
+            max-width: 550px;
+            font-size: 1rem;
             justify-content: space-between;
-            padding: 1rem 0 1rem 0;
 
 
-            //-------------INNER LEFT BLOCK---------------------------------------------------
-            &-left {
-
-                display: flex;
-                flex-direction: column;
-                max-width: 550px;
-                font-size: 1rem;
-                justify-content: space-between;
-
-
-                //FIXME:-button
-                button {
-                    margin-top: 3vh;
-                    width: 10rem;
-                    height: 2rem;
-                }
-
+            //FIXME:-button
+            button {
+                margin-top: 3vh;
+                width: 10rem;
+                height: 2rem;
             }
 
-            //-------------INNER RIGHTBLOCK---------------------------------------------------
-            &-right {
-                display: flex;
-                padding-left: 1rem;
+        }
 
-                &-block {
-                    border-left: 1px solid lighten(grey, 30%);
-                    padding-left: 0.5rem;
+        //-------------INNER RIGHTBLOCK---------------------------------------------------
+        &-right {
+            display: flex;
+            padding-left: 1rem;
 
-                    &-header {
-                        padding-left: 1rem;
-                        width: 100%;
-                        color: lighten(grey, 10%)
-                    }
+            &-block {
+                border-left: 1px solid lighten(grey, 30%);
+                padding-left: 0.5rem;
 
-                    &-main {
-                        @include center-flex;
-                        width: auto;
-                        align-items: flex-start;
+                &-header {
+                    padding-left: 1rem;
+                    width: 100%;
+                    color: lighten(grey, 10%)
+                }
 
-                        &-inner {
-                            &:nth-child(2) {
-                                border-left: $border-light-gray;
-                            }
+                &-main {
+                    @include center-flex;
+                    width: auto;
+                    align-items: flex-start;
 
-                            &-title {
-                                color: $primary;
-                            }
-
-                            padding: 0 10px;
-                            max-width: 150px;
+                    &-inner {
+                        &:nth-child(2) {
+                            border-left: $border-light-gray;
                         }
-                    }
 
+                        &-title {
+                            color: $primary;
+                        }
+
+                        padding: 0 10px;
+                        max-width: 150px;
+                    }
                 }
 
             }
+
         }
     }
+
 
     //-------------@media querys---------------------------------------------------
     @media screen and (max-width: $medium) {

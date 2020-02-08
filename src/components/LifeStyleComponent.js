@@ -54,7 +54,7 @@ function Block(props) {
 }
 export default function LifeStyle(props) {
   return (
-    <div className="lifestyle ">
+    <div className="lifestyle container-container ">
       <div className="wrapper">
         <p className="heading">THE CONNECTED LIFESTYLE</p>
         <div className="wrapper-inner">

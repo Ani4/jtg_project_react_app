@@ -10,7 +10,7 @@
     //-------------CUSTOMER COMPONENT---------------------------------------------------
     .customer {
 
-        width: 62%;
+        width: 55%;
 
         &-card {
             margin-top: .5rem;
@@ -22,19 +22,21 @@
 
             img {
                 width: 32%;
-            }
 
-            @media screen and (max-width:$medium) {
-                img {
-                    width: auto;
+                @media screen and (max-width:$medium) {
+
+                    width: 45%;
+
                 }
-            }
 
-            @media screen and (max-width:$sm-to-md) {
-                img {
+                @media screen and (max-width:$sm-to-md) {
+
                     width: 7rem;
+
                 }
             }
+
+
         }
 
         //-------------@media querys---------------------------------------------------
@@ -45,7 +47,7 @@
 
     //-------------NEWS COMPONENT---------------------------------------------------
     .news {
-        width: 30%;
+        width: 35%;
         padding-bottom: 1rem;
 
         &-articles {
