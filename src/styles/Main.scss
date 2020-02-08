@@ -1,3 +1,6 @@
+@import "./variables/variables";
+
+
 /*General Styles*/
 
 * {
@@ -30,10 +33,15 @@ a:hover {
 .container {
   margin: 0 10vw;
 
+  @media (max-width:400px) {
+    margin: 0;
+  }
 }
 
 
-@import "./variables/variables";
+
+
 @import "./mixins/mixins";
 @import "./sassComponents/header";
 @import "./sassComponents/footer";
+@import "./sassComponents/main";

@@ -2,6 +2,7 @@ footer {
     background: url(/assets/images/footer_bg.jpg) no-repeat left;
     background-size: cover;
     position: relative;
+    bottom: 0;
 
     .footer {
         @include center-flex;

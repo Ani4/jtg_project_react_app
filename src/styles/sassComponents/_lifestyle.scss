@@ -1,0 +1,45 @@
+.lifestyle {
+    display: inline-block;
+
+    margin: 0;
+    border: $outline-border;
+    width: 100%;
+    padding-bottom: 3rem;
+    @include bg-grad;
+
+    .wrapper {
+        padding: 1rem 2rem;
+
+        .heading {
+            font-size: 130%;
+            color: $primary;
+            padding-bottom: 0.5rem;
+            border-bottom: 0.1rem solid $primary;
+        }
+
+        &-inner {
+            @include center-flex;
+            justify-content: space-between;
+            padding: 1rem 0 1rem 0;
+
+
+            &-left {
+
+                max-width: 400px;
+                font-size: 1rem;
+
+                button {
+                    position: relative;
+                    top: 2rem;
+                    font-size: .8rem;
+
+                    width: 200px;
+                    height: 40px;
+                }
+
+            }
+
+
+        }
+    }
+}

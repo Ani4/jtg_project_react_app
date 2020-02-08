@@ -1,0 +1,41 @@
+.main {
+  background: url(/assets/images/main_bg.jpg) no-repeat top;
+  background-size: cover;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  button {
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.2vw 0 1.2vw;
+    align-items: center;
+    position: absolute;
+    color: $primary;
+    background-color: white;
+    outline: none;
+    border: 0.6px solid darken($light, 20%);
+    cursor: pointer;
+    font-weight: 700;
+    word-spacing: .1rem;
+    letter-spacing: .1em;
+
+    img {
+      width: .6rem;
+      height: .6rem;
+    }
+    @media (max-width:$medium){
+      font-size:.6rem;
+      justify-content:space-around;
+      
+  }
+  }
+
+  @import "./slider";
+  @import "./lifestyle";
+
+}

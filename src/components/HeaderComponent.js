@@ -4,7 +4,7 @@ import $ from "jquery";
 export function RenderNavItem(props) {
   let item = props.navItems.map(e => (
     <li className={`${props.styleName}-list-item`}>
-      <a href="#">{e}</a>
+      <a href="">{e}</a>
     </li>
   ));
   return (
@@ -21,6 +21,7 @@ function Header() {
       else $(".nav-list").attr("id", "active");
     });
   });
+
   return (
     <header className="header">
       <div className="nav container">

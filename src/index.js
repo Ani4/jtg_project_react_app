@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import "font-awesome/css/font-awesome.min.css";
+import "jquery.cycle2/src/jquery.cycle2.min.js";
 
 import * as serviceWorker from "./serviceWorker";
 
