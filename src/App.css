@@ -150,7 +150,6 @@ footer {
     justify-content: space-between;
     padding: 0 1.2vw 0 1.2vw;
     align-items: center;
-    position: absolute;
     color: #147e46;
     background-color: white;
     outline: none;
@@ -190,6 +189,7 @@ footer {
       z-index: 100;
       top: 80%;
       right: 10%;
+      position: absolute;
       background-color: white;
       outline: none;
       cursor: pointer;
@@ -204,7 +204,6 @@ footer {
     margin: 0;
     border: 0.6px solid #e6e6e6;
     width: 100%;
-    padding-bottom: 3rem;
     background: white;
     background: -moz-linear-gradient(180deg, white 13%, whitesmoke 92%, #f0f0f0 98%);
     background: -webkit-linear-gradient(180deg, white 13%, whitesmoke 92%, #f0f0f0 98%);
@@ -219,17 +218,63 @@ footer {
         border-bottom: 0.1rem solid #147e46; }
       .main .lifestyle .wrapper-inner {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
         justify-content: space-between;
         padding: 1rem 0 1rem 0; }
         .main .lifestyle .wrapper-inner-left {
-          max-width: 400px;
-          font-size: 1rem; }
+          display: flex;
+          flex-direction: column;
+          max-width: 450px;
+          font-size: 1rem;
+          justify-content: center;
+          text-align: justify; }
           .main .lifestyle .wrapper-inner-left button {
-            position: relative;
-            top: 2rem;
-            font-size: .8rem;
-            width: 200px;
-            height: 40px; }
+            margin-top: 3vh;
+            width: 10rem;
+            height: 2rem; }
+        .main .lifestyle .wrapper-inner-right {
+          display: flex;
+          padding-left: 1rem; }
+          .main .lifestyle .wrapper-inner-right-block {
+            border-left: 1px solid #cdcdcd;
+            padding-left: 0.5rem; }
+            .main .lifestyle .wrapper-inner-right-block-header {
+              padding-left: 1rem;
+              width: 100%;
+              color: #9a9a9a; }
+            .main .lifestyle .wrapper-inner-right-block-main {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              flex-direction: row;
+              width: auto;
+              align-items: flex-start; }
+              .main .lifestyle .wrapper-inner-right-block-main-inner {
+                padding: 0 10px;
+                max-width: 150px; }
+                .main .lifestyle .wrapper-inner-right-block-main-inner:nth-child(2) {
+                  border-left: 1px solid #cdcdcd; }
+                .main .lifestyle .wrapper-inner-right-block-main-inner-title {
+                  color: #147e46; }
+    @media screen and (max-width: 920px) {
+      .main .lifestyle .wrapper-inner {
+        flex-direction: column; }
+        .main .lifestyle .wrapper-inner-left {
+          max-width: 100%;
+          margin-bottom: 1.5rem; }
+        .main .lifestyle .wrapper-inner-right {
+          padding: 0; }
+          .main .lifestyle .wrapper-inner-right-block:nth-child(1) {
+            border-left: 0px; }
+          .main .lifestyle .wrapper-inner-right-block-header {
+            padding: 0 0 .3rem 1rem; } }
+    @media screen and (max-width: 920px) and (max-width: 600px) {
+      .main .lifestyle .wrapper-inner-right {
+        flex-direction: column; }
+        .main .lifestyle .wrapper-inner-right-block {
+          padding-bottom: 1rem; }
+          .main .lifestyle .wrapper-inner-right-block:nth-child(2) {
+            border-left: 0px; }
+          .main .lifestyle .wrapper-inner-right-block-main-inner {
+            padding: 0; }
+            .main .lifestyle .wrapper-inner-right-block-main-inner:nth-child(2) {
+              border: none; } }

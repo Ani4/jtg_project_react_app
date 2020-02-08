@@ -4,7 +4,7 @@
     margin: 0;
     border: $outline-border;
     width: 100%;
-    padding-bottom: 3rem;
+    // padding-bottom: 1rem;
     @include bg-grad;
 
     .wrapper {
@@ -12,34 +12,127 @@
 
         .heading {
             font-size: 130%;
+
             color: $primary;
             padding-bottom: 0.5rem;
             border-bottom: 0.1rem solid $primary;
         }
 
         &-inner {
-            @include center-flex;
+            display: flex;
             justify-content: space-between;
             padding: 1rem 0 1rem 0;
 
 
+
             &-left {
 
-                max-width: 400px;
+                display: flex;
+                flex-direction: column;
+                max-width: 450px;
                 font-size: 1rem;
+                justify-content: center;
+                text-align: justify;
 
+
+                //FIXME:-button
                 button {
-                    position: relative;
-                    top: 2rem;
-                    font-size: .8rem;
-
-                    width: 200px;
-                    height: 40px;
+                    margin-top: 3vh;
+                    width: 10rem;
+                    height: 2rem;
                 }
 
             }
 
+            &-right {
+                display: flex;
+                padding-left: 1rem;
 
+                &-block {
+                    border-left: 1px solid lighten(grey, 30%);
+                    padding-left: 0.5rem;
+
+                    &-header {
+                        padding-left: 1rem;
+                        width: 100%;
+                        color: lighten(grey, 10%)
+                    }
+
+                    &-main {
+                        @include center-flex;
+                        width: auto;
+                        align-items: flex-start;
+
+                        &-inner {
+                            &:nth-child(2) {
+                                border-left: 1px solid lighten(grey, 30%);
+                            }
+
+                            &-title {
+                                color: $primary;
+                            }
+
+                            padding: 0 10px;
+                            max-width: 150px;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    @media screen and (max-width: $medium) {
+        .wrapper-inner {
+            flex-direction: column;
+
+            &-left {
+                max-width: 100%;
+                margin-bottom: 1.5rem;
+            }
+
+            &-right {
+                padding: 0;
+
+
+                &-block {
+                    &:nth-child(1) {
+                        border-left: 0px;
+
+
+                    }
+
+                    &-header {
+                        padding: 0 0 .3rem 1rem;
+
+                    }
+
+                }
+
+                @media screen and (max-width:600px) {
+                    flex-direction: column;
+
+                    &-block {
+                        padding-bottom: 1rem;
+
+                        &:nth-child(2) {
+                            border-left: 0px;
+
+
+                        }
+
+                        &-main-inner {
+                            padding: 0;
+
+                            &:nth-child(2) {
+                                border: none;
+                            }
+                        }
+                    }
+                }
+
+            }
         }
     }
 }

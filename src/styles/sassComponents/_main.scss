@@ -14,7 +14,7 @@
     justify-content: space-between;
     padding: 0 1.2vw 0 1.2vw;
     align-items: center;
-    position: absolute;
+
     color: $primary;
     background-color: white;
     outline: none;
@@ -28,11 +28,12 @@
       width: .6rem;
       height: .6rem;
     }
-    @media (max-width:$medium){
-      font-size:.6rem;
-      justify-content:space-around;
-      
-  }
+
+    @media (max-width:$medium) {
+      font-size: .6rem;
+      justify-content: space-around;
+
+    }
   }
 
   @import "./slider";
