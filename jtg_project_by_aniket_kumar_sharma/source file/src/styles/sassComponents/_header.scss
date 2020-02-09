@@ -1,0 +1,69 @@
+.header {
+    background: url(/assets/images/header_bg01.png) no-repeat left;
+    background-size: cover;
+    -webkit-box-shadow: 0px -3px 10px 0px rgba(105, 105, 105, 1);
+    -moz-box-shadow: 0px -3px 10px 0px rgba(105, 105, 105, 1);
+    box-shadow: 0px -3px 10px 0px rgba(105, 105, 105, 1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .nav {
+        @include center-flex;
+        padding: 5px 0;
+
+        &-brand {
+            margin: 0 2vw 0 0;
+        }
+
+        &-list {
+            @include center-flex;
+            width: 100%;
+            margin: 0 5vw;
+
+            &-item {
+                text-transform: uppercase;
+            }
+        }
+
+        &-toggle>i {
+            color: $primary;
+            font-size: 1.5rem;
+            display: none;
+        }
+    }
+
+    @media (max-width:$medium) {
+        .nav {
+            @include center-flex(column);
+            flex-wrap: wrap;
+            padding: 5px 0;
+
+            &-brand {
+                margin: 0 2vw 0 0;
+                width: 100%;
+                @include center-flex;
+            }
+
+            &-list {
+                @include center-flex(column);
+                padding: .5em 0 .5rem 0;
+                margin: 0;
+
+
+                &-item {
+                    padding-top: .2rem;
+                }
+            }
+
+            #active {
+                display: none;
+            }
+
+            &-toggle>i {
+                display: block;
+                float: right;
+            }
+        }
+    }
+}

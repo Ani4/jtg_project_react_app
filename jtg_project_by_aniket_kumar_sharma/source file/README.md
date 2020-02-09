@@ -1,8 +1,6 @@
-## <!-- markdownlint-enable-file MD000 -->
+-<!-- markdownlint-enable-file MD000 -->
 
-# HERE THE ONLINE LINK : https://jtgproject.herokuapp.com/
-
----
+# HERE THE ONLINE LINK
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

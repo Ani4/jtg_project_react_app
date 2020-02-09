@@ -1,0 +1,51 @@
+.slider {
+    position: relative;
+    top: -0.8rem;
+    z-index: 98;
+    border: $outline-border;
+
+
+    &-content {
+        position: absolute;
+        height: 50%;
+        width: 30%;
+        z-index: 100;
+        top: 20%;
+        left: 68%;
+        color: black;
+        font-size: 1.5vw;
+        font-weight: 300;
+
+        &-header {
+            color: $primary;
+            font-size: 2vw;
+        }
+    }
+
+    button {
+        width: 20%;
+        height: 10%;
+        z-index: 100;
+        top: 80%;
+        right: 10%;
+        position: absolute;
+        background-color: white;
+        outline: none;
+        cursor: pointer;
+        font-weight: 700;
+        word-spacing: .1rem;
+        letter-spacing: .1em;
+
+        img {
+            width: 1vw;
+            height: 1vw;
+        }
+
+        @media screen and (max-width:$sm-to-md) {
+            font-size: 35%;
+        }
+
+    }
+
+
+}

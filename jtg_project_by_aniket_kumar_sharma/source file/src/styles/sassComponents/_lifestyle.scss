@@ -1,0 +1,126 @@
+.lifestyle {
+
+
+    // .wrapper {
+
+
+    //-------------INNER BLOCK---------------------------------------------------
+    .wrapper-inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0 1rem 0;
+
+
+        //-------------INNER LEFT BLOCK---------------------------------------------------
+        &-left {
+
+            display: flex;
+            flex-direction: column;
+            max-width: 550px;
+            font-size: 1rem;
+            justify-content: space-between;
+
+
+            //FIXME:-button
+            button {
+                margin-top: 3vh;
+                width: 10rem;
+                height: 2rem;
+            }
+
+        }
+
+        //-------------INNER RIGHTBLOCK---------------------------------------------------
+        &-right {
+            display: flex;
+            padding-left: 1rem;
+
+            &-block {
+                border-left: 1px solid lighten(grey, 30%);
+                padding-left: 0.5rem;
+
+                &-header {
+                    padding-left: 1rem;
+                    width: 100%;
+                    color: lighten(grey, 10%)
+                }
+
+                &-main {
+                    @include center-flex;
+                    width: auto;
+                    align-items: flex-start;
+
+                    &-inner {
+                        &:nth-child(2) {
+                            border-left: $border-light-gray;
+                        }
+
+                        &-title {
+                            color: $primary;
+                        }
+
+                        padding: 0 10px;
+                        max-width: 150px;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+
+    //-------------@media querys---------------------------------------------------
+    @media screen and (max-width: $medium) {
+        .wrapper-inner {
+            flex-direction: column;
+
+            &-left {
+                max-width: 100%;
+                margin-bottom: 1.5rem;
+            }
+
+            &-right {
+                padding: 0;
+
+
+                &-block {
+                    &:nth-child(1) {
+                        border-left: 0px;
+
+
+                    }
+
+                    &-header {
+                        padding: 0 0 .3rem 1rem;
+
+                    }
+
+                }
+
+                @media screen and (max-width:$sm-to-md) {
+                    flex-direction: column;
+
+                    &-block {
+                        padding-bottom: 1rem;
+
+                        &:nth-child(2) {
+                            border-left: 0px;
+
+
+                        }
+
+                        &-main-inner {
+                            padding: 0;
+
+                            &:nth-child(2) {
+                                border: none;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.main {
+  background: url(/assets/images/main_bg.jpg) no-repeat;
+
+
+  background-size: contain;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .heading {
+    font-size: 130%;
+    color: $primary;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid $primary;
+  }
+
+  .green-bold {
+    color: $primary;
+    font-weight: 600;
+  }
+
+  .mt {
+    margin-top: 1.5rem;
+  }
+
+  .green-word {
+    color: $primary;
+
+  }
+
+  button {
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.2vw 0 1.2vw;
+    align-items: center;
+    color: $primary;
+    background-color: white;
+    outline: none;
+    border: 0.6px solid darken($light, 20%);
+    font-weight: 700;
+    word-spacing: .1rem;
+    letter-spacing: .1em;
+
+    img {
+      width: .6rem;
+      height: .6rem;
+    }
+
+    @media (max-width:$medium) {
+      font-size: .6rem;
+      justify-content: space-around;
+
+    }
+
+
+  }
+
+  .wrapper {
+    padding: 2rem 3rem;
+  }
+
+  .container-container {
+    margin: 0;
+    border: $outline-border;
+    width: 100%;
+    margin-bottom: 2rem;
+    @include bg-grad;
+  }
+
+  @import "./slider";
+  @import "./lifestyle";
+  @import "./customernews";
+
+
+}
