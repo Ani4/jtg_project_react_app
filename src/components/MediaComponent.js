@@ -23,7 +23,6 @@ function Resources(props) {
     }
     // -----------VIDEO-----------------
     else {
-      console.log("VIDEOS");
       put.push(
         <div
           className="media-container-item"
