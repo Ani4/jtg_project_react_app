@@ -4,7 +4,6 @@ import Header from "./components/HeaderComponent";
 import Footer from "./components/FooterComponent";
 import Main from "./components/MainComponent";
 // import "./public/assets/styles/sass/Main.scss";
-import "./App.css";
 
 function App() {
   return (

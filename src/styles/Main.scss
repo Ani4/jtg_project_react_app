@@ -1,16 +1,12 @@
 @import "./variables/variables";
 
-
 /*General Styles*/
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-
 }
-
 
 html {
   font: normal 16px sans-serif;
@@ -30,22 +26,23 @@ a {
 
 a:hover {
   opacity: 1;
-
 }
 
 .container {
   margin: 0 10vw;
 
-  @media (max-width:400px) {
+  @media (max-width: 400px) {
     margin: 0;
   }
 }
 
-
-
+.styles_playButton__1Q3EF {
+  display: none;
+}
 
 @import "./mixins/mixins";
 @import "./sassComponents/header";
 @import "./sassComponents/footer";
 @import "./sassComponents/main";
 @import "./sassComponents/media";
+@import "./sassComponents/gallery";
